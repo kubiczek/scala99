@@ -8,7 +8,7 @@ import org.specs2.mutable.Specification
  * @author kubiczek
  */
 class Problem09Spec extends Specification {
-  "test compress list" should {
+  "test pack list" should {
     
     "return List() with the recursive implementation" in {
       "when given List()" in {

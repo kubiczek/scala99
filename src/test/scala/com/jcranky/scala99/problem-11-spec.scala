@@ -8,7 +8,7 @@ import org.specs2.mutable.Specification
  * @author kubiczek
  */
 class Problem11Spec extends Specification {
-  "test compress list" should {
+  "test encode list" should {
     
     "return List()" in {
       "when given List()" in {

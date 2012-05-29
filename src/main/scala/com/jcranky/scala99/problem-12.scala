@@ -21,6 +21,10 @@ object Problem12 {
       }
     }
     
-    list.map(unzip(_)).flatten
+    //list.map(unzip(_)).flatten
+    list.flatMap(unzip(_))
   }
+ 
+  def decodeBuildin[T](list: List[(Int, T)]): List[T] =
+    list.flatMap(x => List.make(x._1, x._2))
 }

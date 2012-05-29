@@ -8,12 +8,15 @@ import org.specs2.mutable.Specification
  * @author kubiczek
  */
 class Problem12Spec extends Specification {
-  "test compress list" should {
+  "test decode list" should {
     
     "return List()" in {
       "when given List()" in {
         "with the unzip() implementation" in {
           Problem12.decode(List()) must_== List()
+        }
+        "with the buildin implementation" in {
+          Problem12.decodeBuildin(List()) must_== List()
         }
       }
     }
@@ -24,6 +27,9 @@ class Problem12Spec extends Specification {
       "when given %s".format(list1) in {
         "with the unzip() implementation" in {
           Problem12.decode(list1) must_== result
+        }
+        "with the buildin implementation" in {
+          Problem12.decodeBuildin(list1) must_== result
         }
       }
     }
